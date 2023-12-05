@@ -22,9 +22,6 @@ class PDF(FPDF):
 # Create a PDF object
 pdf = PDF()
 
-# Define the number of pages you want to generate
-num_pages = 10  # Adjust this number as needed
-
 # Lists of strings for 'What went well' and 'What could be improved'
 positive_feedback = [
     "The application of neural networks in your project demonstrated a deep understanding of complex machine learning models. Your approach to layer selection and activation functions was particularly impressive.",
@@ -59,7 +56,4 @@ for group_number in group_order:
     pdf.add_feedback_page(**feedback)
 
 # Save the PDF
-pdf.output("student_feedback.pdf")
-
-
-
+pdf.output("nayeel_imtiaz_student_feedback.pdf")
